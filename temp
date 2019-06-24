@@ -1,0 +1,29 @@
+class CancerDataset(Dataset):
+    """
+    datalist = [(image, label), (image, label)....]
+    """
+    def __init__(self, datalist):
+        self.datalist = datalist
+    def __len__(self):
+        return len(self.datalist)
+    def __getitem__(self, idx):
+        image = np.load(self.datalist[idx][0])
+        label = self.datalist[idx][0]
+        return (image, label)
+
+# [(image, label), (image, label)....]
+list_of_all_sample = []
+image_list = [pair[0] for pair in list_of_all_sample]
+target_list = [pair[1] for pair in list_of_all_sample]
+
+skf = StratifiedKFold(n_splits = 3)
+for train_indexes, valid_indexes in skf.split(image_list, target_list):
+    train_img_list = imgs_list[train_indexes]
+    train_target_list = target_list[train_indexes]
+
+    valid_img_list = imgs_list[train_indexes]
+    valid_target_list = target_list[valid_indexes]
+
+    train_list #
+    train_dataset = CancerDataset(train_list)
+    valid_dataset = CancerDataset(valid_list)
