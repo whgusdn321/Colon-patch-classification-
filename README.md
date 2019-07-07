@@ -8,9 +8,9 @@ In this study, we propose a convolutional neural networks (CNN) for classifying 
 ## Methodology
 ***
 ## Network Architecture
-![Alt text](C:\Users\HyunwooJo\Desktop\networkArchitecture2.png)
+![model](https://user-images.githubusercontent.com/43023361/60765548-1c9d6280-a0d7-11e9-922b-63b20dc7a31c.png)
 * Size of Input to Gloval Avg.Pooling Layer
-![Alt text](C:\Users\HyunwooJo\Desktop\Size_before_globalavg.png)
+![Size_before_globalavg](https://user-images.githubusercontent.com/43023361/60765557-566e6900-a0d7-11e9-974f-711e726b827c.png)
 
 # #Data Augmentation
 * Affine : Random scale, translation, rotation, shear.
@@ -25,12 +25,13 @@ In this study, we propose a convolutional neural networks (CNN) for classifying 
 * Cross-entropy loss
 
 ## Training visualization (TensorboardX)
-*First fold
-	*![Alt text](C:\Users\HyunwooJo\Desktop\1-fold.png)
-*Second fold
-	*![Alt text](C:\Users\HyunwooJo\Desktop\1-fold.png)
-*Third fold
-	*![Alt text](C:\Users\HyunwooJo\Desktop\1-fold.png)
+* First fold
+	* ![1-fold](https://user-images.githubusercontent.com/43023361/60765559-66864880-a0d7-11e9-9683-6bd889e5c0e7.png)
+* Second fold
+	* ![1-fold](https://user-images.githubusercontent.com/43023361/60765559-66864880-a0d7-11e9-9683-6bd889e5c0e7.png)
+* Third fold
+	* !![1-fold](https://user-images.githubusercontent.com/43023361/60765559-66864880-a0d7-11e9-9683-6bd889e5c0e7.png)
+
 ***
 # Experiments & Results
 ***
@@ -43,14 +44,12 @@ In this study, we propose a convolutional neural networks (CNN) for classifying 
 * Provided by Kangbuk Samsung Hospital
 
 #Dataset Sample
-![Alt text](C:\Users\HyunwooJo\Desktop\dataset_sample.png)
+![dataset_sample](https://user-images.githubusercontent.com/43023361/60765567-87e73480-a0d7-11e9-81b0-c09027d2e926.png)
 
 #Results
-![Alt text](C:\Users\HyunwooJo\Desktop\results.png)
-
+![results](https://user-images.githubusercontent.com/43023361/60765569-91709c80-a0d7-11e9-9d26-0270c1b41e0f.png)
 
 ## used libaries(requirements)
-
 
 pytorch (version : 1.1, gpu-version) 
 imaug - for image augmentation
