@@ -2,29 +2,29 @@
 
 Colon cancer patch classification(benign vs Cancer) project using Densenet.
 
-##Introduction
+## Introduction
 In this study, we propose a convolutional neural networks (CNN) for classifying colon dataset using Densely connected network. With changing the depth of the model and input size, we compared the model performance. As a result, the best model achieved 98.02% accuracy and 0.9951 AUC. Plus, as deeper depth, smaller input image decreased model performance.
 
-##Methodology
+## Methodology
 ***
-##Network Architecture
+## Network Architecture
 ![Alt text](C:\Users\HyunwooJo\Desktop\networkArchitecture2.png)
 * Size of Input to Gloval Avg.Pooling Layer
 ![Alt text](C:\Users\HyunwooJo\Desktop\Size_before_globalavg.png)
 
-##Data Augmentation
+# #Data Augmentation
 * Affine : Random scale, translation, rotation, shear.
 * Horizontal and vertical flipping
 * Texture : Gaussian blur, Median blur and Gaussian noise
 * Color : Adding Hue, saturation, linear contrast
 
-##Training Method
+## Training Method
 * Adam optimizer, default parameters 
 * 3 fold cross validation
 * 40 epochs
 * Cross-entropy loss
 
-##Training visualization (TensorboardX)
+## Training visualization (TensorboardX)
 *First fold
 	*![Alt text](C:\Users\HyunwooJo\Desktop\1-fold.png)
 *Second fold
@@ -60,17 +60,5 @@ matplotlib
 numpy
 
 
-
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-Please make sure to update tests as appropriate.
-
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+HyunwooJo
